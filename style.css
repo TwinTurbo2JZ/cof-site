@@ -24,7 +24,20 @@ body {
 .hero__content {
   color: white;
   padding: 2em 2em;
-  width: 60%;
+  /* width: 60%; */
+}
+.fuck {
+  /* outline: 2px solid red; */
+  text-align: center;
+  flex-direction: column;
+}
+
+.cta-btn {
+  position: sticky;
+  top: 0;
+  background: #23424a;
+  padding: 2rem;
+  text-align: center;
 }
 
 .hero p {
@@ -75,5 +88,7 @@ body {
 
 .btn:hover,
 .btn:focus {
-  opacity: 0.75;
+  /* opacity: 0.75; */
+  transform: translate(-280px, 0px);
+  transition: 0.8s;
 }
