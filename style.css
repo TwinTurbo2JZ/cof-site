@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Source code pro";
+  src: url("./assets/fonts/sourcecodepro-variablefont_wght-webfont.woff2");
+}
+@font-face {
+  font-family: "Source code pro";
+  src: url("./assets/fonts/sourcecodepro-variablefont_wght-webfont.woff");
+}
+@font-face {
+  font-family: "Source code pro i";
+  src: url("./assets/fonts/sourcecodepro-italic-variablefont_wght-webfont.woff2");
+}
+@font-face {
+  font-family: "Source code pro i";
+  src: url("./assets/fonts/sourcecodepro-italic-variablefont_wght-webfont.woff");
+}
+
 *,
 *::before,
 *::after {
@@ -25,6 +42,45 @@ body {
   color: white;
   padding: 2em 2em;
   /* width: 60%; */
+}
+
+.hero__content h1 {
+  font-family: "Source code pro i";
+  position: relative;
+  max-width: fit-content;
+}
+
+.hero__content h1::before,
+.hero__content h1::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero__content h1::before {
+  background: #23424a;
+  animation: typewriter 10s steps(47) forwards;
+}
+
+.hero__content h1::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 10s steps(47) forwards, blink 500ms steps(47) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
 }
 .fuck {
   /* outline: 2px solid red; */
